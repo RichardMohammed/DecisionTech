@@ -1,0 +1,16 @@
+D:\Code\DecisionTech\RM.Basket.Library\RM.Basket.Library.Tests\bin\Debug\netcoreapp2.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+D:\Code\DecisionTech\RM.Basket.Library\RM.Basket.Library.Tests\bin\Debug\netcoreapp2.0\xunit.runner.reporters.netcoreapp10.dll
+D:\Code\DecisionTech\RM.Basket.Library\RM.Basket.Library.Tests\bin\Debug\netcoreapp2.0\xunit.runner.utility.netcoreapp10.dll
+D:\Code\DecisionTech\RM.Basket.Library\RM.Basket.Library.Tests\bin\Debug\netcoreapp2.0\RM.Basket.Library.Tests.deps.json
+D:\Code\DecisionTech\RM.Basket.Library\RM.Basket.Library.Tests\bin\Debug\netcoreapp2.0\RM.Basket.Library.Tests.runtimeconfig.json
+D:\Code\DecisionTech\RM.Basket.Library\RM.Basket.Library.Tests\bin\Debug\netcoreapp2.0\RM.Basket.Library.Tests.runtimeconfig.dev.json
+D:\Code\DecisionTech\RM.Basket.Library\RM.Basket.Library.Tests\bin\Debug\netcoreapp2.0\RM.Basket.Library.Tests.dll
+D:\Code\DecisionTech\RM.Basket.Library\RM.Basket.Library.Tests\bin\Debug\netcoreapp2.0\RM.Basket.Library.Tests.pdb
+D:\Code\DecisionTech\RM.Basket.Library\RM.Basket.Library.Tests\obj\Debug\netcoreapp2.0\RM.Basket.Library.Tests.csprojResolveAssemblyReference.cache
+D:\Code\DecisionTech\RM.Basket.Library\RM.Basket.Library.Tests\obj\Debug\netcoreapp2.0\RM.Basket.Library.Tests.csproj.CoreCompileInputs.cache
+D:\Code\DecisionTech\RM.Basket.Library\RM.Basket.Library.Tests\obj\Debug\netcoreapp2.0\RM.Basket.Library.Tests.AssemblyInfoInputs.cache
+D:\Code\DecisionTech\RM.Basket.Library\RM.Basket.Library.Tests\obj\Debug\netcoreapp2.0\RM.Basket.Library.Tests.AssemblyInfo.cs
+D:\Code\DecisionTech\RM.Basket.Library\RM.Basket.Library.Tests\obj\Debug\netcoreapp2.0\RM.Basket.Library.Tests.dll
+D:\Code\DecisionTech\RM.Basket.Library\RM.Basket.Library.Tests\obj\Debug\netcoreapp2.0\RM.Basket.Library.Tests.pdb
+D:\Code\DecisionTech\RM.Basket.Library\RM.Basket.Library.Tests\bin\Debug\netcoreapp2.0\RM.Basket.Library.dll
+D:\Code\DecisionTech\RM.Basket.Library\RM.Basket.Library.Tests\bin\Debug\netcoreapp2.0\RM.Basket.Library.pdb
