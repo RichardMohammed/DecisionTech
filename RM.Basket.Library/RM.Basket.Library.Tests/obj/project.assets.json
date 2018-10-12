@@ -5754,11 +5754,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Development\\SourceCode\\Demo\\DT\\DecisionTech\\RM.Basket.Library\\RM.Basket.Library.Tests\\RM.Basket.Library.Tests.csproj",
+      "projectUniqueName": "C:\\Development\\SourceCode\\Demo\\DT2\\DecisionTech\\RM.Basket.Library\\RM.Basket.Library.Tests\\RM.Basket.Library.Tests.csproj",
       "projectName": "RM.Basket.Library.Tests",
-      "projectPath": "C:\\Development\\SourceCode\\Demo\\DT\\DecisionTech\\RM.Basket.Library\\RM.Basket.Library.Tests\\RM.Basket.Library.Tests.csproj",
+      "projectPath": "C:\\Development\\SourceCode\\Demo\\DT2\\DecisionTech\\RM.Basket.Library\\RM.Basket.Library.Tests\\RM.Basket.Library.Tests.csproj",
       "packagesPath": "C:\\Users\\richardm\\.nuget\\packages\\",
-      "outputPath": "C:\\Development\\SourceCode\\Demo\\DT\\DecisionTech\\RM.Basket.Library\\RM.Basket.Library.Tests\\obj\\",
+      "outputPath": "C:\\Development\\SourceCode\\Demo\\DT2\\DecisionTech\\RM.Basket.Library\\RM.Basket.Library.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5779,8 +5779,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Development\\SourceCode\\Demo\\DT\\DecisionTech\\RM.Basket.Library\\RM.Basket.Library\\RM.Basket.Library.csproj": {
-              "projectPath": "C:\\Development\\SourceCode\\Demo\\DT\\DecisionTech\\RM.Basket.Library\\RM.Basket.Library\\RM.Basket.Library.csproj"
+            "C:\\Development\\SourceCode\\Demo\\DT2\\DecisionTech\\RM.Basket.Library\\RM.Basket.Library\\RM.Basket.Library.csproj": {
+              "projectPath": "C:\\Development\\SourceCode\\Demo\\DT2\\DecisionTech\\RM.Basket.Library\\RM.Basket.Library\\RM.Basket.Library.csproj"
             }
           }
         }

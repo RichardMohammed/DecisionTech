@@ -675,11 +675,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Development\\SourceCode\\Demo\\DT\\DecisionTech\\RM.Basket.Library\\RM.Basket.Library\\RM.Basket.Library.csproj",
+      "projectUniqueName": "C:\\Development\\SourceCode\\Demo\\DT2\\DecisionTech\\RM.Basket.Library\\RM.Basket.Library\\RM.Basket.Library.csproj",
       "projectName": "RM.Basket.Library",
-      "projectPath": "C:\\Development\\SourceCode\\Demo\\DT\\DecisionTech\\RM.Basket.Library\\RM.Basket.Library\\RM.Basket.Library.csproj",
+      "projectPath": "C:\\Development\\SourceCode\\Demo\\DT2\\DecisionTech\\RM.Basket.Library\\RM.Basket.Library\\RM.Basket.Library.csproj",
       "packagesPath": "C:\\Users\\richardm\\.nuget\\packages\\",
-      "outputPath": "C:\\Development\\SourceCode\\Demo\\DT\\DecisionTech\\RM.Basket.Library\\RM.Basket.Library\\obj\\",
+      "outputPath": "C:\\Development\\SourceCode\\Demo\\DT2\\DecisionTech\\RM.Basket.Library\\RM.Basket.Library\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
