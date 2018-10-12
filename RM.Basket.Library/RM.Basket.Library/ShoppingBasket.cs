@@ -59,7 +59,7 @@ namespace RM.Basket.Library
         {
             foreach(IProductLineItem p in Products)
             {
-                var discount = DiscountFactory.GetDiscount(p.Product.Id, p.Product.DiscountCode);
+                var discount = DiscountFactory.GetDiscount(p.Product.Id, p.Product.Discount);
                 Products = discount.ApplyDiscount(Products);
             }
         }

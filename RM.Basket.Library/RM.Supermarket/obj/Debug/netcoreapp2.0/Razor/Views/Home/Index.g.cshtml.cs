@@ -57,7 +57,7 @@ using RM.Supermarket.ViewModels;
             WriteLiteral("\r\n<div class=\"col-sm-12 col-md-12 col-lg-12\">\r\n  <div class=\"bottom-padding-small float-right\">\r\n    ");
             EndContext();
             BeginContext(149, 119, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4e0ed8739ac44910a4f4b2cc68071240", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b3164f38c4dd4a0183326eadaaedac60", async() => {
                 BeginContext(253, 11, true);
                 WriteLiteral("View Basket");
                 EndContext();
@@ -134,7 +134,7 @@ WriteAttributeValue("", 452, product.ImageThumbnailUrl, 452, 26, false);
             WriteLiteral("</h4>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div>\r\n        <div class=\"button\">\r\n          ");
             EndContext();
             BeginContext(857, 124, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fcb67329722844f0b10965aed2b2b348", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cbe9fe9b43084398a0f7ac3183019ebf", async() => {
                 BeginContext(964, 13, true);
                 WriteLiteral("Add to Basket");
                 EndContext();
