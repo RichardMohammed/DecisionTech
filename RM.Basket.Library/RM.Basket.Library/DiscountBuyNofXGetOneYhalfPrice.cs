@@ -18,7 +18,7 @@ namespace RM.Basket.Library
             _discount = discount;
         }
 
-        public List<ProductLineItem> ApplyDiscount(List<ProductLineItem> products)
+        public List<IProductLineItem> ApplyDiscount(List<IProductLineItem> products)
         {
             foreach (int id in _productIds)
             {
@@ -26,14 +26,18 @@ namespace RM.Basket.Library
                 var numDiscountedYItems = line.Quantity / _numRequired;
                 var yLineItem = products.SingleOrDefault(p => p.Product.Id == _discountedProductId);
 
+                if (yLineItem == null)
+                    continue;
+
                 var numFullPricedYItems = yLineItem.Quantity - numDiscountedYItems;
                 numFullPricedYItems = numFullPricedYItems < 0 ? 0 : numFullPricedYItems;
                 numDiscountedYItems = numDiscountedYItems < yLineItem.Quantity ? numDiscountedYItems : yLineItem.Quantity;
                 var fullPricedCost = numFullPricedYItems * yLineItem.Product.Price;
                 var discountedCost = numDiscountedYItems * (yLineItem.Product.Price * _discount/100);
 
+                line.DiscountedLineCost = line.Quantity * line.Product.Price;
                 yLineItem.DiscountedLineCost = fullPricedCost + discountedCost;
-                line.DiscountedLineCost = line.LineCost;
+                yLineItem.DiscountApplied = true;
             }
 
             return products;

@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/lib/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container body-content">
+      <div class="row">
+        <div class="col=sm-12 col-md=12 col-lg-12">
+          <h2><a asp-controller="Home" asp-action="Index">Richie's Discount Supermarket</a></h2>
+        </div>
+      </div>
+    <div class="row">
+      @RenderBody()
+    </div>
+  </div>
+
+</body>
+</html>

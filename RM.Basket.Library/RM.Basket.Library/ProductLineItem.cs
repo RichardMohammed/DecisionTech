@@ -2,11 +2,13 @@
 
 namespace RM.Basket.Library
 {
-    public class ProductLineItem
+    public class ProductLineItem: IProductLineItem
     {
+        public int Id { get; set; }
+        public int BasketId { get; set; }
         public Product Product { get; set; }
         public int Quantity { get; set; }
         public decimal DiscountedLineCost { get; set; }
-        public decimal LineCost => Product.Price * Quantity;
+        public bool DiscountApplied { get;  set; }
     }
 }

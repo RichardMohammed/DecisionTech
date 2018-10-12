@@ -1,11 +1,12 @@
 ﻿namespace RM.Basket.Library.Tests
 {
-    public class TestProducts
+    public class TestMockProductsLineItems
     {
-        public static ProductLineItem BreadItem()
+        public static IProductLineItem BreadItem()
         {
             var breadItem = new ProductLineItem
             {
+                BasketId = 1,
                 Product = new Product { Id = 1, Name = "Bread", Price = 1.00m },
                 Quantity = 1
             };
@@ -13,22 +14,24 @@
             return breadItem;
         }
 
-        public static ProductLineItem MilkItem()
+        public static IProductLineItem MilkItem()
         {
             var milkItem = new ProductLineItem
             {
-                Product = new Product { Id = 2, Name = "Milk", Price = 1.15m },
+                BasketId = 1,
+                Product = new Product { Id = 2, Discount = 2, Name = "Milk", Price = 1.15m },
                 Quantity = 1
             };
 
             return milkItem;
         }
 
-        public static ProductLineItem ButterItem()
+        public static IProductLineItem ButterItem()
         {
             var butterItem = new ProductLineItem
             {
-                Product = new Product { Id = 3, Name = "Butter", Price = 0.80m },
+                BasketId = 1,
+                Product = new Product { Id = 3, Discount = 3, Name = "Butter", Price = 0.80m },
                 Quantity = 1
             };
 

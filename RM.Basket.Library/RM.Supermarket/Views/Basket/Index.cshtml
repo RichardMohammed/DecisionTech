@@ -1,0 +1,44 @@
+﻿@model RM.Supermarket.ViewModels.BasketViewModel
+
+<div class="col-sm-3 col-md-3 col-lg-3"><h4>Item</h4></div>
+<div class="col-sm-3 col-md-3 col-lg-3"><h4>Price</h4></div>
+<div class="col-sm-3 col-md-3 col-lg-3"><h4>Quantity</h4></div>
+<div class="col-sm-3 col-md-3 col-lg-3"><h4>Line Total</h4></div>
+
+@foreach (var productLine in Model.ProductLineItems)
+{
+  <div class="col-sm-3 col-md-3 col-lg-3">
+    <div class="basketProductdisplay">
+      <img class="imgthumbnail" src="@productLine.Product.ImageThumbnailUrl" alt="" />
+      <div>
+        <h4>@productLine.Product.Name</h4>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-3 col-md-3 col-lg-3">
+    <h4>@productLine.Product.Price.ToString("c")</h4>
+  </div>
+  <div class="col-sm-3 col-md-3 col-lg-3">
+    <h4>@productLine.Quantity</h4>
+  </div>
+  <div class="col-sm-2 col-md-2 col-lg-2">
+    <h4>@((@productLine.Quantity * @productLine.Product.Price).ToString("c"))</h4>
+  </div>
+  <div class="col-sm-1 col-md-1 col-lg-1">
+    <div class="button">
+      <a class="btn btn-danger" asp-controller="Basket" asp-action="Delete" asp-route-basketLineId="@productLine.Id">X</a>
+    </div>
+  </div>
+  <div>
+  </div>
+}
+<div class="col-sm-12 col-md-12 col-lg-12">
+  <div class="col-sm-6 col-md-6 col-lg-6">
+    <div class="button">
+      <a class="btn btn-dark" asp-controller="Basket" asp-action="UpdateTotal" asp-route-basketId="@Model.BasketId">Update Total</a>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-6 col-lg-6">
+    @Model.Total
+  </div>
+</div>

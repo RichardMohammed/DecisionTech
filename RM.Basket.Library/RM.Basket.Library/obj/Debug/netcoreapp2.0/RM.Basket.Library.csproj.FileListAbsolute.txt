@@ -1,9 +1,9 @@
 D:\Code\DecisionTech\RM.Basket.Library\RM.Basket.Library\bin\Debug\netcoreapp2.0\RM.Basket.Library.deps.json
 D:\Code\DecisionTech\RM.Basket.Library\RM.Basket.Library\bin\Debug\netcoreapp2.0\RM.Basket.Library.dll
 D:\Code\DecisionTech\RM.Basket.Library\RM.Basket.Library\bin\Debug\netcoreapp2.0\RM.Basket.Library.pdb
-D:\Code\DecisionTech\RM.Basket.Library\RM.Basket.Library\obj\Debug\netcoreapp2.0\RM.Basket.Library.csprojResolveAssemblyReference.cache
 D:\Code\DecisionTech\RM.Basket.Library\RM.Basket.Library\obj\Debug\netcoreapp2.0\RM.Basket.Library.csproj.CoreCompileInputs.cache
 D:\Code\DecisionTech\RM.Basket.Library\RM.Basket.Library\obj\Debug\netcoreapp2.0\RM.Basket.Library.AssemblyInfoInputs.cache
 D:\Code\DecisionTech\RM.Basket.Library\RM.Basket.Library\obj\Debug\netcoreapp2.0\RM.Basket.Library.AssemblyInfo.cs
 D:\Code\DecisionTech\RM.Basket.Library\RM.Basket.Library\obj\Debug\netcoreapp2.0\RM.Basket.Library.dll
 D:\Code\DecisionTech\RM.Basket.Library\RM.Basket.Library\obj\Debug\netcoreapp2.0\RM.Basket.Library.pdb
+D:\Code\DecisionTech\RM.Basket.Library\RM.Basket.Library\obj\Debug\netcoreapp2.0\RM.Basket.Library.csprojResolveAssemblyReference.cache

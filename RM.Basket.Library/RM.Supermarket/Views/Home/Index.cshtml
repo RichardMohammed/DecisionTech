@@ -1,0 +1,33 @@
+﻿@model RM.Supermarket.ViewModels.HomeViewModel
+
+<div class="col-sm-12 col-md-12 col-lg-12">
+  <div class="bottom-padding-small float-right">
+    <a class="btn btn-dark" asp-controller="Basket" asp-action="Index" asp-route-basketId="@Model.BasketId">View Basket</a>
+  </div>
+</div>
+  @foreach (var product in Model.Products)
+  {
+  <div class="col-sm-4 col-md-4 col-lg-4">
+    <div class="productdisplay">
+      <img class="imgthumbnail" src="@product.ImageThumbnailUrl" alt="" />
+      <div class="caption">
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <h4>@product.Name</h4>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <h4>@product.Price.ToString("c")</h4>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="button">
+          <a class="btn btn-dark" asp-controller="Basket" asp-action="AddToBasket" asp-route-productId="@product.Id">Add to Basket</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div>
+    </div>
+  }
+

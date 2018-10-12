@@ -1,0 +1,36 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #d4dcea;
+    color: #555;
+}
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.banner {
+    margin-bottom:20px;
+}
+
+.imgthumbnail {
+    height: 200px;
+    width: 250px;
+}
+.productdisplay{
+    text-align:center;
+    background:#ffffff;
+    padding-top:20px;
+    padding-bottom:10px
+}
+.basketProductdisplay img {
+    height: 100px;
+    width: 125px;
+}
+.caption {
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+.bottom-padding-small{
+    padding-bottom:10px;
+}

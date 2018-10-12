@@ -1,0 +1,13 @@
+D:\Code\DecisionTech\RM.Basket.Library\RM.Supermarket\bin\Debug\netcoreapp2.0\RM.Supermarket.deps.json
+D:\Code\DecisionTech\RM.Basket.Library\RM.Supermarket\bin\Debug\netcoreapp2.0\RM.Supermarket.runtimeconfig.json
+D:\Code\DecisionTech\RM.Basket.Library\RM.Supermarket\bin\Debug\netcoreapp2.0\RM.Supermarket.runtimeconfig.dev.json
+D:\Code\DecisionTech\RM.Basket.Library\RM.Supermarket\bin\Debug\netcoreapp2.0\RM.Supermarket.dll
+D:\Code\DecisionTech\RM.Basket.Library\RM.Supermarket\bin\Debug\netcoreapp2.0\RM.Supermarket.pdb
+D:\Code\DecisionTech\RM.Basket.Library\RM.Supermarket\bin\Debug\netcoreapp2.0\RM.Basket.Library.dll
+D:\Code\DecisionTech\RM.Basket.Library\RM.Supermarket\bin\Debug\netcoreapp2.0\RM.Basket.Library.pdb
+D:\Code\DecisionTech\RM.Basket.Library\RM.Supermarket\obj\Debug\netcoreapp2.0\RM.Supermarket.csprojResolveAssemblyReference.cache
+D:\Code\DecisionTech\RM.Basket.Library\RM.Supermarket\obj\Debug\netcoreapp2.0\RM.Supermarket.csproj.CoreCompileInputs.cache
+D:\Code\DecisionTech\RM.Basket.Library\RM.Supermarket\obj\Debug\netcoreapp2.0\RM.Supermarket.AssemblyInfoInputs.cache
+D:\Code\DecisionTech\RM.Basket.Library\RM.Supermarket\obj\Debug\netcoreapp2.0\RM.Supermarket.AssemblyInfo.cs
+D:\Code\DecisionTech\RM.Basket.Library\RM.Supermarket\obj\Debug\netcoreapp2.0\RM.Supermarket.dll
+D:\Code\DecisionTech\RM.Basket.Library\RM.Supermarket\obj\Debug\netcoreapp2.0\RM.Supermarket.pdb

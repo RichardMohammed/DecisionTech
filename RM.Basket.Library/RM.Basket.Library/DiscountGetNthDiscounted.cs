@@ -15,7 +15,7 @@ namespace RM.Basket.Library
             _discountPercent = discountPercent;
         }
 
-        public List<ProductLineItem> ApplyDiscount(List<ProductLineItem> products)
+        public List<IProductLineItem> ApplyDiscount(List<IProductLineItem> products)
         {
             foreach(int id in _productIds)
             {
@@ -26,6 +26,7 @@ namespace RM.Basket.Library
                 var discountedCost = numDiscountedItems * (line.Product.Price - line.Product.Price * _discountPercent/100);
 
                 line.DiscountedLineCost = fullPricedCost + discountedCost;
+                line.DiscountApplied = true;
             }
 
             return products;

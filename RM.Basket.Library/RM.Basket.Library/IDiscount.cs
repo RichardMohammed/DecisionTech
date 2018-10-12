@@ -4,6 +4,6 @@ namespace RM.Basket.Library
 {
     public interface IDiscount
     {
-        List<ProductLineItem> ApplyDiscount(List<ProductLineItem> products);
+        List<IProductLineItem> ApplyDiscount(List<IProductLineItem> products);
     }
 }
