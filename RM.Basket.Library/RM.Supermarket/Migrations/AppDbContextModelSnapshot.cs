@@ -27,7 +27,7 @@ namespace RM.Supermarket.Migrations
 
                     b.Property<string>("Description");
 
-                    b.Property<int>("Discount");
+                    b.Property<int>("DiscountCode");
 
                     b.Property<string>("ImageThumbnailUrl");
 

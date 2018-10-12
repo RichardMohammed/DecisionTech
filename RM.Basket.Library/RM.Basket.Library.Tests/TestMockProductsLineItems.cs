@@ -19,7 +19,7 @@
             var milkItem = new ProductLineItem
             {
                 BasketId = 1,
-                Product = new Product { Id = 2, Discount = 2, Name = "Milk", Price = 1.15m },
+                Product = new Product { Id = 2, DiscountCode = 2, Name = "Milk", Price = 1.15m },
                 Quantity = 1
             };
 
@@ -31,7 +31,7 @@
             var butterItem = new ProductLineItem
             {
                 BasketId = 1,
-                Product = new Product { Id = 3, Discount = 3, Name = "Butter", Price = 0.80m },
+                Product = new Product { Id = 3, DiscountCode = 3, Name = "Butter", Price = 0.80m },
                 Quantity = 1
             };
 

@@ -8,6 +8,6 @@
         public string Description { get; set; }
         public string ImageUrl { get; set; }
         public string ImageThumbnailUrl { get; set; }
-        public int Discount { get; set; }
+        public int DiscountCode { get; set; }
     }
 }

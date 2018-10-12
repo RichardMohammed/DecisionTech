@@ -43,8 +43,8 @@ namespace RM.Supermarket.Models
             _products = new List<Product>
             {
                 new Product {Id = 1, Name = "Bread", Price = 1.00m, ImageThumbnailUrl="/images/breadThumb.jpg", Description="Hot bread"},
-                new Product {Id = 2, Discount = 2,  Name = "Milk", Price = 1.15m, ImageThumbnailUrl="/images/milkThumb.png", Description="Fresh milk"},
-                new Product {Id = 3, Discount = 3, Name = "Butter", Price = 0.80m, ImageThumbnailUrl="/images/butterThumb.jpg", Description="Rich butter"}
+                new Product {Id = 2, DiscountCode = 2,  Name = "Milk", Price = 1.15m, ImageThumbnailUrl="/images/milkThumb.png", Description="Fresh milk"},
+                new Product {Id = 3, DiscountCode = 3, Name = "Butter", Price = 0.80m, ImageThumbnailUrl="/images/butterThumb.jpg", Description="Rich butter"}
             };
         }
 

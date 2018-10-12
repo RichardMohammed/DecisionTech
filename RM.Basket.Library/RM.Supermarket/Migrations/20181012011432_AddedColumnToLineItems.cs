@@ -8,6 +8,12 @@ namespace RM.Supermarket.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.AddColumn<int>(
+                name: "DiscountCode",
+                table: "Products",
+                nullable: false,
+                defaultValue: false);
+
             migrationBuilder.AddColumn<bool>(
                 name: "DiscountApplied",
                 table: "BasketLineItems",
