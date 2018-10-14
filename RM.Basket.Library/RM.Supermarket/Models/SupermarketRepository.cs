@@ -15,10 +15,11 @@ namespace RM.Supermarket.Models
         {
             return _appDbContext.BasketLineItems.Where(b => b.BasketId == basketId)
                 .Join(_appDbContext.Products, li => li.Product.Id, p => p.Id, (a,b) => new{a, b })
+                .GroupJoin(_appDbContext.Discounts, pd => pd.b.Discount.Id, d => d.Id, (pd, d) => new {pd, d })
                 .Select(lt => new ProductLineItem() {
-                    BasketId = lt.a.BasketId, Id = lt.a.Id,
-                    DiscountedLineCost = lt.a.DiscountedLineCost, Quantity = lt.a.Quantity,
-                    Product = lt.b
+                    BasketId = lt.pd.a.BasketId, Id = lt.pd.a.Id,
+                    DiscountedLineCost = lt.pd.a.DiscountedLineCost, Quantity = lt.pd.a.Quantity,
+                    Product = lt.pd.b,
                 });
         }
 

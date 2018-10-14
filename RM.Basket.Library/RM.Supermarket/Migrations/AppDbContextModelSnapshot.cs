@@ -20,6 +20,22 @@ namespace RM.Supermarket.Migrations
                 .HasAnnotation("ProductVersion", "2.0.1-rtm-125")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("RM.Basket.Library.Discount", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<decimal>("DiscountAmount");
+
+                    b.Property<int>("SourceProductId");
+
+                    b.Property<int>("TargetProductId");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Discounts");
+                });
+
             modelBuilder.Entity("RM.Basket.Library.Product", b =>
                 {
                     b.Property<int>("Id")
@@ -27,7 +43,7 @@ namespace RM.Supermarket.Migrations
 
                     b.Property<string>("Description");
 
-                    b.Property<int>("Discount");
+                    b.Property<int?>("DiscountId");
 
                     b.Property<string>("ImageThumbnailUrl");
 
@@ -38,6 +54,8 @@ namespace RM.Supermarket.Migrations
                     b.Property<decimal>("Price");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("DiscountId");
 
                     b.ToTable("Products");
                 });
@@ -62,6 +80,13 @@ namespace RM.Supermarket.Migrations
                     b.HasIndex("ProductId");
 
                     b.ToTable("BasketLineItems");
+                });
+
+            modelBuilder.Entity("RM.Basket.Library.Product", b =>
+                {
+                    b.HasOne("RM.Basket.Library.Discount", "Discount")
+                        .WithMany()
+                        .HasForeignKey("DiscountId");
                 });
 
             modelBuilder.Entity("RM.Basket.Library.ProductLineItem", b =>

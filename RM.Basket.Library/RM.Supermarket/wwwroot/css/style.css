@@ -34,3 +34,10 @@
 .bottom-padding-small{
     padding-bottom:10px;
 }
+.top-padding-large {
+    padding-top: 30px;
+}
+.total{
+    text-align:right;
+    font-size: 1.5em;
+}

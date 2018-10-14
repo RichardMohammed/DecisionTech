@@ -16,10 +16,11 @@
 
         public static IProductLineItem MilkItem()
         {
+            var discount = new Discount { Id = 2, DiscountAmount = 100m, TargetProductId = 2 };
             var milkItem = new ProductLineItem
             {
                 BasketId = 1,
-                Product = new Product { Id = 2, Discount = 2, Name = "Milk", Price = 1.15m },
+                Product = new Product { Id = 2, Discount = discount, Name = "Milk", Price = 1.15m },
                 Quantity = 1
             };
 
@@ -28,10 +29,12 @@
 
         public static IProductLineItem ButterItem()
         {
+            var discount = new Discount { Id = 1, DiscountAmount = 50m, TargetProductId = 1 };
+
             var butterItem = new ProductLineItem
             {
                 BasketId = 1,
-                Product = new Product { Id = 3, Discount = 3, Name = "Butter", Price = 0.80m },
+                Product = new Product { Id = 3, Discount = discount, Name = "Butter", Price = 0.80m },
                 Quantity = 1
             };
 

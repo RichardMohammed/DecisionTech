@@ -11,8 +11,8 @@ using System;
 namespace RM.Supermarket.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20181011211614_Changes")]
-    partial class Changes
+    [Migration("20181012113412_AddDiscountAsObject")]
+    partial class AddDiscountAsObject
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -21,12 +21,30 @@ namespace RM.Supermarket.Migrations
                 .HasAnnotation("ProductVersion", "2.0.1-rtm-125")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("RM.Basket.Library.Discount", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<decimal>("DiscountAmount");
+
+                    b.Property<int>("SourceProductId");
+
+                    b.Property<int>("TargetProductId");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Discounts");
+                });
+
             modelBuilder.Entity("RM.Basket.Library.Product", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("Description");
+
+                    b.Property<int?>("DiscountId");
 
                     b.Property<string>("ImageThumbnailUrl");
 
@@ -38,6 +56,8 @@ namespace RM.Supermarket.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("DiscountId");
+
                     b.ToTable("Products");
                 });
 
@@ -47,6 +67,8 @@ namespace RM.Supermarket.Migrations
                         .ValueGeneratedOnAdd();
 
                     b.Property<int>("BasketId");
+
+                    b.Property<bool>("DiscountApplied");
 
                     b.Property<decimal>("DiscountedLineCost");
 
@@ -59,6 +81,13 @@ namespace RM.Supermarket.Migrations
                     b.HasIndex("ProductId");
 
                     b.ToTable("BasketLineItems");
+                });
+
+            modelBuilder.Entity("RM.Basket.Library.Product", b =>
+                {
+                    b.HasOne("RM.Basket.Library.Discount", "Discount")
+                        .WithMany()
+                        .HasForeignKey("DiscountId");
                 });
 
             modelBuilder.Entity("RM.Basket.Library.ProductLineItem", b =>

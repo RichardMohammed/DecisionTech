@@ -11,8 +11,8 @@ using System;
 namespace RM.Supermarket.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20181011221654_resolveProductIssues")]
-    partial class resolveProductIssues
+    [Migration("20181012091154_UpdateProducts")]
+    partial class UpdateProducts
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -49,6 +49,8 @@ namespace RM.Supermarket.Migrations
                         .ValueGeneratedOnAdd();
 
                     b.Property<int>("BasketId");
+
+                    b.Property<bool>("DiscountApplied");
 
                     b.Property<decimal>("DiscountedLineCost");
 

@@ -8,5 +8,9 @@ namespace RM.Supermarket.ViewModels
         public int BasketId { get; set; }
         public decimal Total { get; set; }
         public List<IProductLineItem> ProductLineItems { get; set; }
+        public BasketViewModel()
+        {
+
+        }
     }
 }

@@ -29,16 +29,14 @@
       <a class="btn btn-danger" asp-controller="Basket" asp-action="Delete" asp-route-basketLineId="@productLine.Id">X</a>
     </div>
   </div>
-  <div>
-  </div>
 }
-<div class="col-sm-12 col-md-12 col-lg-12">
-  <div class="col-sm-6 col-md-6 col-lg-6">
+
+  <div class="col-sm-6 col-md-6 col-lg-6 top-padding-large">
     <div class="button">
       <a class="btn btn-dark" asp-controller="Basket" asp-action="UpdateTotal" asp-route-basketId="@Model.BasketId">Update Total</a>
     </div>
   </div>
-  <div class="col-sm-6 col-md-6 col-lg-6">
-    @Model.Total
+  <div class="col-sm-6 col-md-6 col-lg-6 total top-padding-large">
+    <label class="font-weight-bold">@Model.Total</label>
   </div>
-</div>
+

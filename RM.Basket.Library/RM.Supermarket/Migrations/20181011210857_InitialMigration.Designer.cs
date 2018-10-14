@@ -35,6 +35,7 @@ namespace RM.Supermarket.Migrations
                     b.Property<string>("Name");
 
                     b.Property<decimal>("Price");
+                    b.Property<int>("Discount");
 
                     b.HasKey("Id");
 

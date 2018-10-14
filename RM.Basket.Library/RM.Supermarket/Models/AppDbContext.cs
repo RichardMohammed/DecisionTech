@@ -16,6 +16,6 @@ namespace RM.Supermarket.Models
 
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductLineItem> BasketLineItems { get; set; }
-
+        public DbSet<Discount> Discounts { get; set; }
     }
 }

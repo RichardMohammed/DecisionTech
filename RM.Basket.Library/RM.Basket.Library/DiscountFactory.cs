@@ -4,12 +4,15 @@ namespace RM.Basket.Library
 {
     public class DiscountFactory
     {
-        public static IDiscount GetDiscount(int productId, int discountId)
+        public static IDiscount GetDiscount(int productId, Discount discount)
         {
-            switch (discountId)
+            if (discount == null)
+                return new NullDiscount();
+
+            switch (discount.Id)
             {
+                case 1: return new DiscountBuyNofXGetOneYhalfPrice(new List<int> { productId }, 2, discount.TargetProductId, discount.DiscountAmount);
                 case 2: return new DiscountGetNthDiscounted(new List<int> { productId }, 4, 100); // 100% off 4th item
-                case 3: return new DiscountBuyNofXGetOneYhalfPrice(new List<int> { productId }, 2, 4, 50);
                 default: return new NullDiscount();
             }
         }

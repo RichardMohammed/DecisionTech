@@ -7,7 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RM.Basket.Library", "RM.Bas
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RM.Basket.Library.Tests", "RM.Basket.Library.Tests\RM.Basket.Library.Tests.csproj", "{51E80F39-61ED-4D76-AB98-23E9593AAA4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RM.Supermarket", "RM.Supermarket\RM.Supermarket.csproj", "{123AC867-CBCD-4F7F-86EA-6DAC3EE762F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RM.Supermarket", "RM.Supermarket\RM.Supermarket.csproj", "{123AC867-CBCD-4F7F-86EA-6DAC3EE762F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D131A1E1-6725-42A4-817D-4C5BAE374695}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.md = ReadMe.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
