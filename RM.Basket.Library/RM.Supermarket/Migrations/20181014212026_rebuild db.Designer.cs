@@ -11,8 +11,8 @@ using System;
 namespace RM.Supermarket.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20181012113412_AddDiscountAsObject")]
-    partial class AddDiscountAsObject
+    [Migration("20181014212026_rebuild db")]
+    partial class rebuilddb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

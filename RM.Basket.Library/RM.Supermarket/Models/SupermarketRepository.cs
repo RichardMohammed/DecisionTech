@@ -14,12 +14,14 @@ namespace RM.Supermarket.Models
         public IEnumerable<IProductLineItem> GetAllLineItemsByBasketId(int basketId)
         {
             return _appDbContext.BasketLineItems.Where(b => b.BasketId == basketId)
-                .Join(_appDbContext.Products, li => li.Product.Id, p => p.Id, (a,b) => new{a, b })
+                .Join(_appDbContext.Products, li => li.Product.Id, p => p.Id, (lineitem,product) => new{ a=lineitem, b= product })
                 .GroupJoin(_appDbContext.Discounts, pd => pd.b.Discount.Id, d => d.Id, (pd, d) => new {pd, d })
-                .Select(lt => new ProductLineItem() {
+                .SelectMany(discounts => discounts.d.DefaultIfEmpty(),
+                (lt, discounts) => new ProductLineItem() {
                     BasketId = lt.pd.a.BasketId, Id = lt.pd.a.Id,
                     DiscountedLineCost = lt.pd.a.DiscountedLineCost, Quantity = lt.pd.a.Quantity,
-                    Product = lt.pd.b,
+                    Product = new Product { Id = lt.pd.b.Id, Description = lt.pd.b.Description, ImageThumbnailUrl = lt.pd.b.ImageThumbnailUrl,
+                                            ImageUrl = lt.pd.b.ImageUrl, Name = lt.pd.b.Name, Price = lt.pd.b.Price, Discount = discounts },
                 });
         }
 

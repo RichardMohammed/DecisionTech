@@ -5,10 +5,25 @@ using System.Collections.Generic;
 
 namespace RM.Supermarket.Migrations
 {
-    public partial class InitialMigration : Migration
+    public partial class rebuilddb : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "Discounts",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    DiscountAmount = table.Column<decimal>(nullable: false),
+                    SourceProductId = table.Column<int>(nullable: false),
+                    TargetProductId = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Discounts", x => x.Id);
+                });
+
             migrationBuilder.CreateTable(
                 name: "Products",
                 columns: table => new
@@ -16,6 +31,7 @@ namespace RM.Supermarket.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Description = table.Column<string>(nullable: true),
+                    DiscountId = table.Column<int>(nullable: true),
                     ImageThumbnailUrl = table.Column<string>(nullable: true),
                     ImageUrl = table.Column<string>(nullable: true),
                     Name = table.Column<string>(nullable: true),
@@ -24,6 +40,12 @@ namespace RM.Supermarket.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Products", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Products_Discounts_DiscountId",
+                        column: x => x.DiscountId,
+                        principalTable: "Discounts",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -33,6 +55,7 @@ namespace RM.Supermarket.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     BasketId = table.Column<int>(nullable: false),
+                    DiscountApplied = table.Column<bool>(nullable: false),
                     DiscountedLineCost = table.Column<decimal>(nullable: false),
                     ProductId = table.Column<int>(nullable: true),
                     Quantity = table.Column<int>(nullable: false)
@@ -52,6 +75,11 @@ namespace RM.Supermarket.Migrations
                 name: "IX_BasketLineItems_ProductId",
                 table: "BasketLineItems",
                 column: "ProductId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Products_DiscountId",
+                table: "Products",
+                column: "DiscountId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -61,6 +89,9 @@ namespace RM.Supermarket.Migrations
 
             migrationBuilder.DropTable(
                 name: "Products");
+
+            migrationBuilder.DropTable(
+                name: "Discounts");
         }
     }
 }
