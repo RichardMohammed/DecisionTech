@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using RM.Basket.Library;
 
 namespace RM.Supermarket.Models
@@ -81,6 +80,11 @@ namespace RM.Supermarket.Models
         }
 
         public void DeleteLineItem(int basketLineId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public int GetBasketItemsCount(int basketId)
         {
             throw new NotImplementedException();
         }

@@ -10,5 +10,6 @@ namespace RM.Supermarket.Models
         IEnumerable<IProductLineItem> GetAllLineItemsByBasketId(int basketId);
         void SaveBasketLineItem(int basketId, IProductLineItem lineItem);
         void DeleteLineItem(int basketLineId);
+        int GetBasketItemsCount(int basketId);
     }
 }

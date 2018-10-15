@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using RM.Supermarket.Models;
 using RM.Supermarket.ViewModels;
@@ -16,11 +13,14 @@ namespace RM.Supermarket.Controllers
             _supermarketRepository = supermarketRepository;
         }
 
-        // Use Static basket Id for demo. Could be fetched from the DB for the particular User or created and stored in Session later on.
         public IActionResult Index()
         {
+            var basketId = 1; // Use constant basket Id for demo. Could be fetched from the DB for the particular User or created and stored in Session.
             var products = _supermarketRepository.GetAllProducts().ToList();
-            var homeViewModel = new HomeViewModel { Title = "Welcome to Richie's Discount Supermarket", Products = products, BasketId = 1 };
+            var basketCount = _supermarketRepository.GetBasketItemsCount(basketId);
+            var homeViewModel = new HomeViewModel {Title = "Welcome to Richie's Discount Supermarket",
+                                                   Products = products, BasketId = basketId,
+                                                   BasketItemsCount = basketCount};
             return View(homeViewModel);
         }
     }

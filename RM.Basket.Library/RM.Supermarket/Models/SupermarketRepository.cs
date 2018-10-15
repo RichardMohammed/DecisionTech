@@ -7,10 +7,12 @@ namespace RM.Supermarket.Models
     public class SupermarketRepository : ISupermarketRepository
     {
         private readonly AppDbContext _appDbContext;
+
         public SupermarketRepository(AppDbContext appDbContext)
         {
             _appDbContext = appDbContext;
         }
+
         public IEnumerable<IProductLineItem> GetAllLineItemsByBasketId(int basketId)
         {
             return _appDbContext.BasketLineItems.Where(b => b.BasketId == basketId)
@@ -56,6 +58,12 @@ namespace RM.Supermarket.Models
         {
             _appDbContext.BasketLineItems.Remove(_appDbContext.BasketLineItems.Find(basketLineItemId));
             _appDbContext.SaveChanges();
+        }
+
+        public int GetBasketItemsCount(int basketId)
+        {
+            return _appDbContext.BasketLineItems.Where(li => li.BasketId == basketId)
+                .Sum(i => i.Quantity);
         }
     }
 }

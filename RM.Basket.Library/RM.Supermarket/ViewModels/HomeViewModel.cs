@@ -8,5 +8,6 @@ namespace RM.Supermarket.ViewModels
         public string Title { get; set; }
         public int BasketId { get; set; }
         public List<Product> Products { get; set; }
+        public int BasketItemsCount { get; set; }
     }
 }

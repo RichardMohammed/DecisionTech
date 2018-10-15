@@ -60,7 +60,7 @@ namespace RM.Supermarket.Controllers
 
             var basketLineItem = _basket.Products.FirstOrDefault(p => p.Product.Id == product.Id);
             _supermarketRepository.SaveBasketLineItem(_basket.BasketId, basketLineItem);
-            return RedirectToAction("Index", "Basket", new { _basket.BasketId });
+            return RedirectToAction("Index", "Home");
         }
 
         public RedirectToActionResult Delete(int basketLineId)

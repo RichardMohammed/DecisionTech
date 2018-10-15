@@ -35,16 +35,20 @@ namespace RM.Basket.Library
             return Products.Sum(p => p.DiscountedLineCost);
         }
 
-        public void AddProduct(Product item, int quantity)
+        public IProductLineItem AddProduct(Product item, int quantity)
         {
+            IProductLineItem basketLine;
             if (Products.Count > 0 && Products.Any(p => p.Product.Id  == item.Id)){
-                Products.Where(p => p.Product.Id == item.Id).Single().Quantity += quantity;
+                basketLine = Products.Where(p => p.Product.Id == item.Id).Single();
+                basketLine.Quantity += quantity;
             }
             else
             {
-                var productLineItem = new ProductLineItem { Product = item, Quantity = quantity, BasketId = BasketId };
-                Products.Add(productLineItem);
+                basketLine = new ProductLineItem { Product = item, Quantity = quantity, BasketId = BasketId };
+                Products.Add(basketLine);
             }
+
+            return basketLine;
         }
 
         public void DeleteProductLine(int productId)

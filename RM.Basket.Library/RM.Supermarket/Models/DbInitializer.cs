@@ -1,9 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-using RM.Basket.Library;
-using System;
-using System.Collections.Generic;
+﻿using RM.Basket.Library;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace RM.Supermarket.Models
 {

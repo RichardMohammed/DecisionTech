@@ -2,7 +2,7 @@
 
 <div class="col-sm-12 col-md-12 col-lg-12">
   <div class="bottom-padding-small float-right">
-    <a class="btn btn-dark" asp-controller="Basket" asp-action="Index" asp-route-basketId="@Model.BasketId">View Basket</a>
+    <a class="btn btn-dark" asp-controller="Basket" asp-action="Index" asp-route-basketId="@Model.BasketId">View Basket (@Model.BasketItemsCount)</a>
   </div>
 </div>
   @foreach (var product in Model.Products)
