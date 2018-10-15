@@ -16,6 +16,7 @@ namespace RM.Supermarket.Controllers
             _supermarketRepository = supermarketRepository;
         }
 
+        // Use Static basket Id for demo. Could be fetched from the DB for the particular User or created and stored in Session later on.
         public IActionResult Index()
         {
             var products = _supermarketRepository.GetAllProducts().ToList();

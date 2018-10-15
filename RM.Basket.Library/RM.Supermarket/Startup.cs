@@ -29,11 +29,6 @@ namespace RM.Supermarket
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
       //      services.AddTransient<ISupermarketRepository, MockSupermarketRepository>();
             services.AddTransient<ISupermarketRepository, SupermarketRepository>();
-            //  services.AddScoped(sb => ShoppingBasket.GetBasket(1));
-
-            services.AddMemoryCache();
-            services.AddSession();
-
             services.AddMvc();
         }
 
@@ -46,14 +41,7 @@ namespace RM.Supermarket
             }
             app.UseStatusCodePages();
             app.UseStaticFiles();
-            app.UseSession();
             app.UseMvcWithDefaultRoute();
-            //app.UseMvc(routes => 
-            //{
-            //    routes.MapRoute(
-            //        name: "default",
-            //        template: "{controller=Home}/{action=Index}/{id?}");
-            //});
         }
     }
 }

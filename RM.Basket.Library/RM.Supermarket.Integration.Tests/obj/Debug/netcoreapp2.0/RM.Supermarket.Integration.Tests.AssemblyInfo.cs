@@ -11,6 +11,9 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("RM.Basket.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Development\\SourceCode\\Demo\\DT2\\DecisionTech\\RM.Basket.Library\\RM.Basket.Libra" +
+    "ry", "RM.Basket.Library.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("RM.Supermarket, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Development\\SourceCode\\Demo\\DT2\\DecisionTech\\RM.Basket.Library\\RM.Supermarket", "RM.Supermarket.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("RM.Supermarket.Integration.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
