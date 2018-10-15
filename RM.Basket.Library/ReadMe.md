@@ -20,5 +20,8 @@ It currently has a fixed basket id and assumes the main feature under test is th
 The UI is also in dire need of updating but I assume this is not currently a major factor in this test.
 
 # Usage
-This project is using an SQL database which will be created by EF. After building, please run update-database 
-in the package manager console in order to create the database (and seed data) from the Migrations.
+Once downloaded, please build the project.
+The Unit Test and Integration Tests (which uses an in-memory database) can be run immediately.
+To run the MVC application however an SQL database needs to be created by EF. 
+To do so, please run **update-database** in the package manager console in order to create the 
+database (and seed data) from the Migrations.
