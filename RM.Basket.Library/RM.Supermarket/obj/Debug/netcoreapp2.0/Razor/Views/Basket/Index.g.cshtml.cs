@@ -123,7 +123,7 @@ WriteAttributeValue("", 487, productLine.Product.ImageThumbnailUrl, 487, 38, fal
             WriteLiteral("</h4>\r\n  </div>\r\n  <div class=\"col-sm-1 col-md-1 col-lg-1\">\r\n    <div class=\"button\">\r\n      ");
             EndContext();
             BeginContext(1044, 116, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "64ad8728be2f4cfb9685908e01b25eb5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6ab01a7b6d974ae49358099925368491", async() => {
                 BeginContext(1155, 1, true);
                 WriteLiteral("X");
                 EndContext();
@@ -169,7 +169,7 @@ WriteAttributeValue("", 487, productLine.Product.ImageThumbnailUrl, 487, 38, fal
             WriteLiteral("\r\n  <div class=\"col-sm-6 col-md-6 col-lg-6 top-padding-large\">\r\n    <div class=\"button\">\r\n      ");
             EndContext();
             BeginContext(1283, 126, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "74c6a653eab14557828e6cd10c6c4f98", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "10bc639e089b41bcb210a46338fe65c2", async() => {
                 BeginContext(1393, 12, true);
                 WriteLiteral("Update Total");
                 EndContext();
